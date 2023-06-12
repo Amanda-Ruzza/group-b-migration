@@ -13,8 +13,7 @@ resource "aws_vpc" "vpc_ue1_devqa" {
 
     tags = {
         Name = "vpc_ue1_devqa-${random_integer.random.id}"
-        Project = "Migration"
-        Environment = "Development"
+        
     }
 }
 
@@ -23,7 +22,6 @@ resource "aws_internet_gateway" "igw_ue1_devqa" {
 
   tags = {
     Name = "igw_ue1_devqa-${random_integer.random.id}"
-    Project = "Migration"
-    Environment = "Development"
+    
   }
 }
