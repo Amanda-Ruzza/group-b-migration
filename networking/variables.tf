@@ -6,11 +6,12 @@ variable "vpc_cidr" {
 
 variable "public_cidrs" {
     type = list 
-  
+    default = []
 }
 
 variable "private_cidrs" {
     type = list 
+    default = []
   
 }
 
